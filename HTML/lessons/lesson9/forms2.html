@@ -13,29 +13,28 @@
                 <label for="userName">Имя:</label>
                 <input id="userName" type="text">
             </p>
-            <p>
-                <label for="age">Укажите возраст:</label>
-                <select name="age" id="age">
+            <p>Укажите возраст:
+                <input list="age">
+                <datalist id="age">
                     <option disabled>Ваш возраст</option>
-                    <option value="10-15">10-15 лет</option>
-                    <option value="15-20">15-20 лет</option>
-                    <option value="25-30">25-30 лет</option>
-                    <option value="30-40">30-40 лет</option>
-                    <option value="Старше 40 лет">Старше 40 лет</option>
-                </select> 
+                    <option value="10-15 лет"></option>
+                    <option value="15-20 лет"></option>
+                    <option value="25-30 лет"></option>
+                    <option value="30-40 лет"></option>
+                    <option value="Старше 40 лет"></option>                
             </p>
             <p>Укажите пол:
-                <input id="male" name="sex" type="radio" value="m">
                 <label for="male">мужской</label>
-                <input id="female" name="sex" type="radio" value="f"> 
+                <input id="male" name="sex" type="radio" value="m">
                 <label for="female">женский</label>
+                <input id="female" name="sex" type="radio" value="f"> 
             </p>
             <p>
                 <label for="country">Страна проживания:</label>
                 <select name="country" id="country">
                     <option value="Belarus">Беларусь</option>
                     <option value="Russia">Россия</option>
-                    <option value="Ukraine">Украина</option>
+                    <option value="Another">Другая страна</option>
                 </select> 
             </p>
             <p>Владения языками:
@@ -43,9 +42,23 @@
                 <label for="be"><input id="be" name="lang" type="checkbox" value="be"> белорусский</label>
                 <label for="en"><input id="en" name="lang" type="checkbox" value="en"> английский</label>
             </p>
-
-
+            <p>Фото профиля:
+                <input type="file" name="file"> 
+            </p>
+            <p>Введите логин:
+                <input type="login" name="login">               
+            </p>
+            <p>Введите пароль:
+                <input type="password" name="pass">
+            </p>
+            <p>Повторите пароль:
+                <input type="password" name="pass">
+            </p>
         </fieldset>
+        <p>
+            <input type="reset">
+            <input type="submit">
+        </p>
     </form>
 </body>
 </html>
