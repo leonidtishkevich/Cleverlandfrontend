@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    <form action="">
+        <fieldset>
+            <legend>Регистрационная форма пользователя</legend>
+            <p>
+                <label for="userName">Имя:</label>
+                <input id="userName" type="text">
+            </p>
+            <p>Укажите возраст:
+                <input list="age">
+                <datalist id="age">
+                    <option disabled>Ваш возраст</option>
+                    <option value="10-15 лет"></option>
+                    <option value="15-20 лет"></option>
+                    <option value="25-30 лет"></option>
+                    <option value="30-40 лет"></option>
+                    <option value="Старше 40 лет"></option>                
+            </p>
+            <p>Укажите пол:
+                <label for="male">мужской</label>
+                <input id="male" name="sex" type="radio" value="m">
+                <label for="female">женский</label>
+                <input id="female" name="sex" type="radio" value="f"> 
+            </p>
+            <p>
+                <label for="country">Страна проживания:</label>
+                <select name="country" id="country">
+                    <option value="Belarus">Беларусь</option>
+                    <option value="Russia">Россия</option>
+                    <option value="Another">Другая страна</option>
+                </select> 
+            </p>
+            <p>Владения языками:
+                <label for="ru"><input id="ru" name="lang" type="checkbox" value="ru"> русский</label>
+                <label for="be"><input id="be" name="lang" type="checkbox" value="be"> белорусский</label>
+                <label for="en"><input id="en" name="lang" type="checkbox" value="en"> английский</label>
+            </p>
+            <p>Фото профиля:
+                <input type="file" name="file"> 
+            </p>
+            <p>Введите логин:
+                <input type="login" name="login">               
+            </p>
+            <p>Введите пароль:
+                <input type="password" name="pass">
+            </p>
+            <p>Повторите пароль:
+                <input type="password" name="pass">
+            </p>
+        </fieldset>
+        <p>
+            <input type="reset">
+            <input type="submit">
+        </p>
+    </form>
+</body>
+</html>
