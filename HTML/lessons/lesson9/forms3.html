@@ -12,11 +12,59 @@
         <p>Имя:<br>
             <input type="text" name="userName" value="Алексей">
         </p>
-        <p>Язык программирования:<br><br>
+        <p>Язык программирования:<br>
             <input type="radio" name="proLang" value="1"> C++<br>
             <input type="radio" name="proLang" value="2"> PHP<br>
             <input type="radio" name="proLang" value="3"> Python<br>
         </p>
+        <p>Дополнительная информация:<br>
+            <textarea name="" id="" cols="30" rows="5">Есть опыт программирования на C++
+            </textarea>
+        </p>
+        <p>Секретное слово:<br>
+            <input type="password" name="pass">
+        </p>
+        <p>
+            <input type="submit">
+            <input type="reset">
+        </p>
+    </form>
+    <form action="">
+        <fieldset>
+            <legend>Параметры автомобиля</legend>
+            <p>
+                <label for="car">Марка автомобиля:</label>
+                <input id="car" type="text">
+            </p>
+            <p>
+                <label for="car">Объём двигателя, см<sup>3</sup></label>
+                <input id="car" type="text" placeholder="1900">
+            </p>
+            <p>
+                <label for="region">Область:</label>
+                <select name="region" id="region">
+                    <option value="Brest">Брестская</option>
+                    <option value="Vitebsk">Витебская</option>
+                    <option value="Gomel">Гомельская</option>
+                    <option value="Grodno">Гродненская</option>
+                    <option value="Minsk">Минская</option>
+                    <option value="Mogilev">Могилёвская</option>
+                </select> 
+            </p>
+            <p>Тип КПП <br>
+                <input id="Auto" name="transmission" type="radio" value="Auto">
+                <label for="Auto">Автомат</label>
+                <br>
+                <input id="Mech" name="transmission" type="radio" value="Mech"> 
+                <label for="Mech">Механика</label>
+            </p>
+            <p>Двигатель <br>
+                <label for="Electro"><input id="Electro" name="Engine" type="checkbox" value="Electro"> Электро</label><br>
+                <label for="Diesel"><input id="Diesel" name="Engine" type="checkbox" value="Diesel"> Дизель</label><br>
+                <label for="Petrol"><input id="Petrol" name="Engine" type="checkbox" value="Petrol"> Бензин</label><br>
+            </p>
+
+        </fieldset>
     </form>
 
 </body>
