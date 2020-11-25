@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacts</title>
+</head>
+<body>
+    <ul type="square">
+        <li><a href="index.html">Главная</a></li>
+        <li><a href="catalog.html">Каталог</a></li>
+        <li><a href="contacts.html">Контакты</a></li>
+    </ul>
+    <hr>
+    <h1>Оформление заказа</h1>
+    <form id="order" name="userform" autocomplete="off">
+        <p>Имя: <input type="text" name="name" autofocus></p>
+        <p>Email: <input type="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" placeholder="example@mail.ru"></p>
+        <p>Телефон: <input type="tel" name="phone" placeholder="+375 29 000 00 00" maxlength="17"></p>
+        <p>Выберите товар: <br>
+            <label for="prod"></label>
+            <select id="prod" name="product" multiple size="3" required>
+                <option value="Garmin_MARQ_Driver">Garmin MARQ Driver</option>
+                <option value="Garmin_vivoactive_3">Garmin vivoactive 3</option>
+                <option value="Fenix_6x_Pro_Solar">Fenix 6x Pro Solar</option>
+            </select>
+        </p>
+        <p>Комментарий:<br>
+            <textarea name="delivery_date" cols="30" rows="5" placeholder="Введите сообщение"></textarea>
+        </p>
+        <p>Выберите способ оплаты: <br>
+            <label><input type="radio" name="payment" value="on_card"> онлайн картой VISA, MasterCard или Белкарт</label><br>
+            <label><input type="radio" name="payment" value="on_inst"> онлайн картой рассрочки</label><br>            
+            <label><input type="radio" name="payment" value="off_cash" checked> при получении наличными</label><br>
+            <label><input type="radio" name="payment" value="off_inst"> при получении картой рассрочки</label><br>
+            <label><input type="radio" name="payment" value="off_card"> при получении другой картой</label><br>
+            <label><input type="radio" name="payment" value="off_cert"> при получении подарочным сертификатом</label><br>
+            <label><input type="radio" name="payment" value="bank_trans"> банковким переводом (для юридических лиц)</label>
+        </p>
+        <p>
+            <button type="submit" form="order">Подтвердите заказ &rarr;</button>
+        </p>
+    </form>
+    <hr>
+    <h2>Контакты</h2>
+    <p>Заказать товар или получить консультацию можно <strong>ежедневно с 8:00 до 22:00</strong>.</p>
+    <p>Телефоны: <br>
+       МТС: +375 29 777 77 77 <br>
+       А1: +375 33 666 66 66         
+    </p>
+    <p>
+        Viber: <a href="https://www.viber.com/online-store.by" target="_blank">online-store.by</a>
+        <br>
+        E-mail: <a href="mailto:online@store.by?subject=Вопрос по ...">online@store.by</a>
+    </p>
+    <p>Адрес: г.Орша, ул.Мира, д.8<p>
+    <p>Посмотреть на карте: <br><br>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1158.1172090711825!2d30.425393770350745!3d54.511727099999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46cfe22ab1e2b585%3A0xa10e86bd978585f5!2z0YPQu9C40YbQsCDQnNC40YDQsCA4LCDQntGA0YjQsCAyMTEzOTE!5e0!3m2!1sru!2sby!4v1606303226093!5m2!1sru!2sby" width="500" height="400" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+    </p>
+    <hr>
+    <footer>&copy; «Все права защищены»</footer>      
+</body>
+</html>
