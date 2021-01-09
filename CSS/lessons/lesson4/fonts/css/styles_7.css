@@ -1,0 +1,10 @@
+ol {
+    font-weight: bold;
+}
+li {
+    font-weight: normal;
+}
+
+sup, sub {
+    font-size: 0.7em;
+}

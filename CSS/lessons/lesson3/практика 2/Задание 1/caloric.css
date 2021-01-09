@@ -20,3 +20,10 @@ td[colspan] {
     text-transform: uppercase;
     padding: 4px 5px;
 }
+
+tr:only-child {
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 4px 5px;
+}
