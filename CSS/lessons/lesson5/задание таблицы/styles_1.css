@@ -1,0 +1,18 @@
+* {
+    font-size: 18px;
+    text-align: center;
+    margin: auto;
+}
+table, td {
+    border: 1px solid;
+}
+.tabl1 {
+    border-collapse: collapse;
+}
+
+.tabl2 {
+    caption-side: bottom;
+    border-collapse: separate;
+    empty-cells: hide;
+    border-spacing: 5px 5px;
+}

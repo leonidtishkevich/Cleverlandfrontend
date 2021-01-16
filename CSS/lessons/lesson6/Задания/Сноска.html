@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p {
+            background-color: lightgreen;
+            border: 2px solid green;
+            border-radius: 10px;
+            width: 300px;
+            padding: 10px;
+            position: relative;
+        }
+
+        p::before {
+            content: "";
+            position: absolute;
+            border: 30px solid transparent;
+            border-top: 30px solid lightgreen;
+            top: 100%;
+            left: 5%;
+        }       
+    </style>
+</head>
+<body>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo magnam delectus similique consequuntur optio tempore enim quisquam fugit, soluta quos, accusamus vero, possimus quidem officia quas molestias! Veniam, eos cum!
+        </p>
+    
+</body>
+</html>

@@ -1,0 +1,23 @@
+th, td {
+    text-align: center;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 20px;
+    border-radius: 5px;
+    width:120px;
+    padding: 15px;
+    empty-cells: hide;
+}
+
+thead tr {
+    color: #fff;
+    background: linear-gradient(to top, #8af004, #6ab623);
+}
+
+tbody th {
+    color: #fff;
+    background: linear-gradient(45deg, #8af004, #6ab623)
+}
+
+tbody td {
+    background-color: #d3fc9e;
+}
