@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p, div {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .weather-card {
+            display: inline-block;
+            width: 120px;
+            margin-bottom: 15px;
+            margin-right: 5px;
+        }
+
+        .weather-card:hover {
+            box-shadow: 0 0 5px black;
+        }
+
+        .weather-card .date {
+            text-align: center;
+            color: white;
+            background: rgb(9, 245, 245);
+        }
+
+        .weather-card .temperature {
+            text-align: center;
+            font-weight: 700;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="weather-wrapper">
+        <div class="weather-card">
+            <p class="date">31.08</p>
+            <img src="weather-sun.jpg" alt="sun">
+            <p class="temperature">+20&deg;</p>
+        </div>    
+         <div class="weather-card">      
+            <p class="date">01.09</p>
+            <img src="weather-snow.jpg" alt="sun">
+            <p class="temperature">-3&deg;</p>
+        </div>  
+        <div class="weather-card">
+            <p class="date">02.09</p>
+            <img src="weather-blizzard.jpg" alt="sun">
+            <p class="temperature">-10&deg;</p>
+        </div>
+    </div>
+</body>
+</html>

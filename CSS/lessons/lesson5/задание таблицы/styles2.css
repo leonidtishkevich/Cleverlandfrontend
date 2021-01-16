@@ -1,0 +1,58 @@
+* {   
+    margin: auto;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    text-align: center;    
+    font-size: 20px;
+    color: blue;
+    text-shadow: 1px 1px 1px grey;
+    padding: 10px;
+}
+
+table {
+    overflow: hidden; /* Скрываем всё за пределами таблицы */
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse; 
+    padding: 2px 10px;   
+}
+
+tr {
+    text-align: left;
+} 
+
+thead {
+    text-align: center;
+    color: #fff;
+    background-color: darkblue;
+}
+
+th {
+    font-weight: normal;
+    color: #fff;
+    background-color: rgb(150, 150, 199);
+}
+
+tbody tr:hover {
+    background-color:#D1D1FF;
+}
+
+tbody td {
+    position: relative; /* Относительное позиционирование */
+   } 
+
+tbody td:hover::before {
+    content: ''; /* Добавляем псевдоколонку */
+    background: #D1D1FF; /* Цвет фона */
+    position: absolute; /* Абсолютное позиционирование */
+    height: 2000px; /* Высота колонки */
+    width: 100%; /* Ширина колонки */
+    left: 0; /* Положение от левого края */
+    top: -1000px; /* Положение от верхнего края */
+    z-index: -1; /* Располагаем ниже текста ячейки */
+   } 
