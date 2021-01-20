@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:ital,wght@0,300;0,700;1,300&display=swap');
+
+.wrapper {
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+.head {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(assets/theater.png);
+    background-size: cover;
+}
+
+.header {
+    padding-top: 51px;
+    display: flex;
+    justify-content: center;
+}
+
+.header .nav-block .link {
+    margin-right: 63px;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 25px;
+    /* identical to box height */
+
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.header .nav-block .link-phone {
+    font-size: 16px;
+    line-height: 22px;
+}
+
+.header .nav-block .link:hover {
+    border-bottom: 2px solid rgb(146, 123, 123);
+}
+
+.head .head-content {
+    max-width: 1055px;
+    margin: 0 auto;
+}
+
+.head .content-text {
+    max-width: 540px;
+}
+
+.head .content-text .title {
+    font-family: Open Sans Condensed;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 64px;
+    line-height: 87px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.head .content-text .description {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 23px;
+    color: #FFFFFF;
+}
+
+.head .content-text .link {
+    padding: 12px 47px;
+    font-family: Open Sans Condensed;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 25px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    background: rgb(187, 140, 11);
+}
+
+.head .slider .cover {
+    width: 350px;
+    height: 490px;
+    background-image: url(assets/cover.png);
+}
