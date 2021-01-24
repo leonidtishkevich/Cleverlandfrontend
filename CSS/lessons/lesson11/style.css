@@ -1,0 +1,27 @@
+.container {
+    max-width: 980px;
+    padding: 60px;
+    position: absolute;
+}
+
+.photo-grid {
+    position: relative;
+    margin-top: 160px;
+    padding: 10px;
+    text-align: center;
+}
+
+.photo-grid img {
+    position: relative;
+    height: 172px;
+    background-color: white;
+    box-shadow: black 5px;
+    float: left;
+    margin-top: -100px;
+    padding: 10px;
+    z-index: 2;
+}
+
+.photo-grid img:nth-child(even) {
+
+}
