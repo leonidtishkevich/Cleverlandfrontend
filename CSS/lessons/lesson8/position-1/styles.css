@@ -14,13 +14,14 @@
     background: radial-gradient(35px 35px at 10px 10px, #00ffff, #ffffff);
     padding: 5px;
     border: 2px solid orange;
-
+    float: left;
 }
 
 .div_3 {
     width: 70px;
     height: 50px;
     background: linear-gradient(45deg, #0000ff, #ffffff);
+    padding: 5px;
     border: 2px dotted red;
     float: right;
 }
