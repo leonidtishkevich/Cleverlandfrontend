@@ -1,0 +1,36 @@
+.header {
+    border-top: 5px solid #000;
+    background-color: lightgrey; 
+    height: 40px;
+    width: 800px;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 14px;    
+}
+
+li {
+    text-transform: uppercase;    
+    float: left;
+    list-style-type: none;    
+    padding: 0 10px;  
+    text-align: center;  
+    position: relative;     
+}
+
+li:hover {
+    color: blue;    
+}
+
+li::before {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 3px;
+  width: 0;
+  background-color: blue;
+  transition: all 0.5s; 
+  top: -17px; 
+}
+
+li:hover::before {    
+    width: 100%; 
+}
