@@ -23,4 +23,33 @@
 // let sec = 20;
 // console.log(`${hour} часов : ${minute} минуты : ${sec} секунд`);
 
-// task4
+// // task4
+// let width = 1024;
+// let margin = 5;
+// let qtyImg = +prompt('Сколько изображений в галерее?', '');
+// let widthImg = +prompt('Ширина изображения?', '');
+// let qtyRow = Math.floor(width / (widthImg + margin * 2));
+// let qtyColumn = Math.floor(qtyImg / qtyRow);
+// let qtyLastColumn = qtyImg - (qtyRow * qtyColumn);
+// alert(`Изображений в каждом ряду ${qtyRow},
+//  полных рядов в галерее ${qtyColumn},
+//  изображений в последнем ряду ${qtyLastColumn}`);
+
+// task5
+let a = 0;
+let b = null;
+let c = undefined;
+let d = 'Привет';
+// let hello = a || b || c || d;
+// let hello = a && b && c && d;
+// let hello = a <= b == c != d;
+let hello = a > b > c > d;
+console.log(hello);
+
+
+
+
+
+
+
+
